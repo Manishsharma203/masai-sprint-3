@@ -57,6 +57,7 @@ function selectSubBreed() {
             // console.log(dataSubBreed)
 
             var select2 = document.getElementById('select2')
+            select2.innerHTML = ''
 
             if ((dataSubBreed.message).length > 0) {
                 for (i = 0; i < Object.keys(dataSubBreed.message).length; i++) {
@@ -65,10 +66,10 @@ function selectSubBreed() {
                     option2.textContent = dataSubBreed.message[i]
                 }
             }
-            else {
-                select2.innerHTML = ''
+            // else {
+            //     select2.innerHTML = ''
 
-            }
+            // }
 
 
         }
